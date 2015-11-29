@@ -17,6 +17,7 @@ public class LoginSteps {
 	@When("^I enter \"([^\"]*)\" \"([^\"]*)\"$")
 	public void i_enter(String userName, String password) {
 		login.doLogin(userName, password);
+		System.out.println("Hi git catch me");
 	}
 
 	@When("^I click on Submit button$")
